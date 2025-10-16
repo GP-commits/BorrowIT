@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow It - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="mobile-container">
+        <header class="main-header">
+            <div class="search-bar" onclick="window.location.href='home3s.html'">
+                <i class='bx bx-menu' onclick="event.stopPropagation(); window.location.href='menu.html'"></i>
+                <span>BORROW IT</span>
+                <i class='bx bx-search' onclick="event.stopPropagation(); window.location.href='search.html'"></i>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="promo-banner">
+                <div class="promo-button" onclick="window.location.href='deals.html'">Explore Deals</div>
+            </section>
+
+            <section class="quick-actions">
+                <div class="action-card" onclick="window.location.href='home3.html'">
+                    <i class='bx bx-medal'></i>
+                </div>
+                <div class="action-card" onclick="window.location.href='borrow_list.html'">
+                    <i class='bx bx-list-check'></i>
+                </div>
+            </section>
+
+            <section class="categories">
+                <div class="section-header">
+                    <h4>CATEGORIES</h4>
+                    <a href="categories.html">View all</a>
+                </div>
+                <div class="category-tags">
+                    <button class="tag" onclick="window.location.href='category_tools.html'"><i class='bx bx-wrench'></i>Tools</button>
+                    <button class="tag" onclick="window.location.href='category_sports.html'"><i class='bx bx-football'></i>Sports</button>
+                    <button class="tag" onclick="window.location.href='category_vehicles.html'"><i class='bx bx-car'></i>Vehicles</button>
+                    <button class="tag" onclick="window.location.href='category_other.html'"><i class='bx bx-grid-alt'></i>Other</button>
+                </div>
+            </section>
+
+            <section class="item-grid">
+                <div class="item-card" onclick="window.location.href='home2.html'">
+                    <img src="chainsaw1.png" alt="Chainsaw">
+                    <i class='bx bx-heart icon-heart' onclick="event.stopPropagation(); window.location.href='like_action.html'"></i>
+                    <i class='bx bxs-map icon-map' onclick="event.stopPropagation(); window.location.href='item_location.html'"></i>
+                    <p>Chain saw</p>
+                </div>
+                <div class="item-card" onclick="window.location.href='item_bicycle.html'">
+                    <img src="cycle.png" alt="Bicycle">
+                    <i class='bx bx-heart icon-heart' onclick="event.stopPropagation(); window.location.href='like_action.html'"></i>
+                    <i class='bx bxs-map icon-map' onclick="event.stopPropagation(); window.location.href='item_location.html'"></i>
+                    <p>Bicycle</p>
+                </div>
+                <div class="item-card" onclick="window.location.href='item_rope.html'">
+                    <img src="rope.png" alt="Rope">
+                    <i class='bx bx-heart icon-heart' onclick="event.stopPropagation(); window.location.href='like_action.html'"></i>
+                    <i class='bx bxs-map icon-map' onclick="event.stopPropagation(); window.location.href='item_location.html'"></i>
+                    <p>Rope</p>
+                </div>
+                <div class="item-card" onclick="window.location.href='item_grasscutter.html'">
+                    <img src="grasscutter.png" alt="Grass Cutter">
+                    <i class='bx bx-heart icon-heart' onclick="event.stopPropagation(); window.location.href='like_action.html'"></i>
+                    <i class='bx bxs-map icon-map' onclick="event.stopPropagation(); window.location.href='item_location.html'"></i>
+                    <p>Grass cutter</p>
+                </div>
+            </section>
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="home.html" class="nav-item active"><i class='bx bxs-home'></i></a>
+            <a href="my_borrows.html" class="nav-item" ><i class='bx bxs-shopping-bag'></i></a>
+            <a href="home4.html" class="nav-item add-item" ><i class='bx bx-plus'></i></a>
+            <a href="notifications.html" class="nav-item"><i class='bx bxs-bell'></i></a>
+            <a href="profile.html" class="nav-item"><i class='bx bxs-user'></i></a>
+        </nav>
+    </div>
+
+</body>
+</html>

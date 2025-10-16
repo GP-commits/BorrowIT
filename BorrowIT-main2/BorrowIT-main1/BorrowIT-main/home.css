@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-color: #f4f5f7;
+    --text-color: #333;
+    --dark-grey: #555;
+    --light-grey: #e9ecef;
+    --white: #fff;
+    --black: #000;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ccc; /* Outer background */
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.mobile-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    position: relative;
+    padding-bottom: 80px; /* Space for bottom nav */
+    overflow-x: hidden;
+}
+
+.main-header, .content {
+    padding: 0 1.25rem;
+}
+
+/* Header */
+.main-header {
+    padding-top: 1.25rem;
+    padding-bottom: 0.5rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-radius: 50px;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid var(--light-grey);
+    box-shadow: var(--shadow);
+}
+
+.search-bar i {
+    font-size: 1.5rem;
+    color: var(--dark-grey);
+}
+
+.search-bar span {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* Promo Banner */
+.promo-banner {
+    height: 150px;
+    background-color: var(--black);
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.promo-button {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Quick Actions */
+.quick-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.action-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+.action-card i {
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+/* Categories */
+.categories {
+    margin-top: 2rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.section-header h4 {
+    font-size: 1rem;
+    color: var(--dark-grey);
+    letter-spacing: 1px;
+}
+.section-header a {
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+}
+
+.category-tags {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto; /* Allows scrolling if more tags are added */
+    padding-bottom: 0.5rem;
+}
+.category-tags::-webkit-scrollbar { display: none; } /* Hide scrollbar */
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.6rem 1rem;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+/* Item Grid */
+.item-grid {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.item-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    padding: 0.75rem;
+    position: relative;
+}
+
+.item-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.item-card p {
+    font-weight: 500;
+    text-align: center;
+}
+
+.item-card .icon-heart {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+
+.item-card .icon-map {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.4rem;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+    padding: 0.5rem 0;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+    border-radius: 20px 20px 0 0;
+}
+
+.nav-item {
+    color: var(--dark-grey);
+    font-size: 1.8rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.nav-item.active {
+    color: var(--black);
+}
+
+.nav-item.add-item {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+    transform: translateY(-25px);
+    border: 5px solid var(--bg-color);
+}

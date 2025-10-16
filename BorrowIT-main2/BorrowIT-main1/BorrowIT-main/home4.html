@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+    <link rel="stylesheet" href="home4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="mobile-container">
+        <header class="header">
+            <button class="icon-btn" aria-label="Go back" onclick="window.location.href='home.html'">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="icon-btn" id="favorite-btn" aria-label="Add to favorites">
+                <i class="far fa-heart"></i>
+            </button>
+        </header>
+
+        <main class="content">
+            <section class="photo-uploader">
+                <label for="photo-input" class="upload-area">
+                    <i class="far fa-image"></i>
+                    <span>Add Photo</span>
+                </label>
+                <input type="file" id="photo-input" hidden accept="image/*">
+                <div class="upload-dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </section>
+            
+            <form id="item-form">
+                <div class="form-group location-bar">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <label for="location-toggle" class="location-label">Enable Your Location</label>
+                    <input type="checkbox" id="location-toggle" class="custom-checkbox-toggle">
+                </div>
+
+                <div class="form-group">
+                    <label for="item-name">Item name</label>
+                    <input type="text" id="item-name" placeholder="abcxyz">
+                </div>
+
+                <div class="form-group">
+                    <label for="item-description">Item description</label>
+                    <textarea id="item-description" rows="3" placeholder="bhbsdjhqd jdwbjhqbd........."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-number">Contact number</label>
+                    <input type="tel" id="contact-number" placeholder="95625XXXXX">
+                </div>
+
+                <div class="form-group">
+                    <label>Is it borrowed for</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="free" name="borrow-type" value="free">
+                            <label for="free">free</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="rent" name="borrow-type" value="rent" checked>
+                            <label for="rent">rent</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submit-btn">Rent It Now</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

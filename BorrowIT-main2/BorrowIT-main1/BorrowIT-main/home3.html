@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="home3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="mobile-container">
+        <header class="header">
+            <button class="icon-btn" aria-label="Go back" onclick="window.location.href='home.html'">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1>Leaderboard</h1>
+            <button class="icon-btn" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </header>
+
+        <main class="content">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="daily">Daily</button>
+                <button class="tab-btn" data-tab="monthly">Monthly</button>
+                <button class="tab-btn" data-tab="all-time">All-Time</button>
+            </div>
+
+            <section class="podium">
+                <div class="podium-item rank-2">
+                    <div class="avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=45" alt="Magi's avatar" class="avatar">
+                        <span class="rank-badge">2</span>
+                    </div>
+                    <p class="name">Magi</p>
+                    <p class="points">1200</p>
+                </div>
+                <div class="podium-item rank-1">
+                    <i class="fas fa-crown crown-icon"></i>
+                    <div class="avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=68" alt="Shon's avatar" class="avatar">
+                        <span class="rank-badge">1</span>
+                    </div>
+                    <p class="name">Shon</p>
+                    <p class="points">3412</p>
+                </div>
+                <div class="podium-item rank-3">
+                    <div class="avatar-container">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="Manu's avatar" class="avatar">
+                        <span class="rank-badge">3</span>
+                    </div>
+                    <p class="name">Manu</p>
+                    <p class="points">1000</p>
+                </div>
+            </section>
+
+            <section class="leaderboard-list">
+                <div class="list-header">
+                    <span>Rank</span>
+                    <span>Name</span>
+                    <span>Point</span>
+                </div>
+                <div class="list-item">
+                    <span class="rank">4</span>
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Thangan's avatar" class="avatar-small">
+                    <span class="name">Thangan</span>
+                    <span class="points">999</span>
+                </div>
+                <div class="list-item">
+                    <span class="rank">5</span>
+                    <img src="https://i.pravatar.cc/150?img=27" alt="Martha's avatar" class="avatar-small">
+                    <span class="name">Martha</span>
+                    <span class="points">894</span>
+                </div>
+                <div class="list-item">
+                    <span class="rank">6</span>
+                    <img src="https://i.pravatar.cc/150?img=14" alt="Zopl's avatar" class="avatar-small">
+                    <span class="name">Zopl</span>
+                    <span class="points">789</span>
+                </div>
+            </section>
+
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item"><i class="fas fa-home"></i></a>
+            <a href="#" class="nav-item"><i class="fas fa-shopping-bag"></i></a>
+            <a href="home4.html" class="nav-item add-btn" ><i class="fas fa-plus"></i></a>
+            <a href="#" class="nav-item"><i class="fas fa-bell"></i></a>
+            <a href="#" class="nav-item"><i class="fas fa-user"></i></a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
