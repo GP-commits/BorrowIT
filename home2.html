@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="home2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="mobile-container">
+        <header class="header">
+            <button class="icon-btn" aria-label="Go back">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <h1>Details</h1>
+            <button class="icon-btn" id="favorite-btn" aria-label="Add to favorites">
+                <i class="far fa-heart"></i>
+            </button>
+        </header>
+
+        <main class="content">
+            <section class="gallery">
+                <div class="gallery-main-wrapper">
+                    <div class="gallery-main">
+                        <img src="https://images.pexels.com/photos/190539/pexels-photo-190539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chainsaw front view">
+                        <img src="https://images.pexels.com/photos/1301099/pexels-photo-1301099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chainsaw side view">
+                        <img src="https://images.pexels.com/photos/6302488/pexels-photo-6302488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chainsaw close up">
+                        <img src="https://images.pexels.com/photos/792416/pexels-photo-792416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chainsaw in action">
+                    </div>
+                </div>
+
+                <div class="gallery-dots">
+                    </div>
+
+                <div class="gallery-thumbnails">
+                    <div class="thumbnail active">
+                        <img src="https://images.pexels.com/photos/190539/pexels-photo-190539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 1">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://images.pexels.com/photos/1301099/pexels-photo-1301099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 2">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://images.pexels.com/photos/6302488/pexels-photo-6302488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://images.pexels.com/photos/792416/pexels-photo-792416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 4">
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-info">
+                <h2>Chain Saw</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    <button class="tab-btn" data-tab="contact">Contact</button>
+                </div>
+                <div class="tab-content">
+                    <div id="description" class="tab-panel active">
+                        <p>Well-maintained used chainsaw available for rent. Perfect for cutting firewood, trimming trees, or small construction tasks. Lightweight, fuel-efficient, and easy to handle. Safety-checked before every rental to ensure smooth performance.</p>
+                    </div>
+                    <div id="reviews" class="tab-panel">
+                        <p>⭐️⭐️⭐️⭐️⭐️ "Great tool! Was sharp and ran perfectly for the whole weekend. Will rent again." - John D.</p>
+                        <p>⭐️⭐️⭐️⭐️ "Good value and easy pickup. A bit heavy for me but got the job done." - Sarah P.</p>
+                    </div>
+                    <div id="contact" class="tab-panel">
+                        <p>Have questions? Contact the owner directly at (555) 123-4567 or email at owner@example.com.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <button class="icon-btn cart-btn" aria-label="Add to cart">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+            <button class="borrow-btn">Borrow Now</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
